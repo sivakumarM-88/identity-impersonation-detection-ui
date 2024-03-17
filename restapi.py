@@ -1,6 +1,6 @@
 from fastapi import FastAPI, UploadFile
 from fastapi.responses import JSONResponse
-from voiceapp import classify_audio_clip2
+from pages.voiceapp import classify_audio_clip2
 import os
 from io import BytesIO
 from tensorflow.keras.models import load_model
@@ -8,7 +8,7 @@ import librosa
 import torch
 import torchaudio
 from typing_extensions import Annotated, Doc
-from emotapp import get_mfccs, get_title, save_audio
+from pages.emotapp import get_mfccs, get_title, save_audio
 from datetime import datetime
 import numpy as np
 
