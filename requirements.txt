@@ -17,7 +17,9 @@ numpy
 plotly
 pandas
 requests
-opencv-python
 umap-learn
 streamlit
-opencv-python
+opencv-python-headless
+fastapi
+python-multipart
+protobuf==3.20
